@@ -6,7 +6,10 @@
  * User: moi
  * Date: 24/09/2019
  * Time: 12:08
- */    <div class="site-section site-section-sm" id="contact">
+ *
+ */
+?>
+<div class="site-section site-section-sm" id="contact">
       <div class="container">
         <div class="row">
 
@@ -70,3 +73,4 @@
         </div>
       </div>
     </div>
+  </html>
