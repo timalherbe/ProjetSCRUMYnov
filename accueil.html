@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="style7.css">
+        <link href="https://fonts.googleapis.com/css?family=Questrial|Varela+Round" rel="stylesheet">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <title>My Website</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="row">
+                <div class="header">
+                    <H1>MY WEBSITE</H1>
+                </div>
+            </header>
+            <div class="row">
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                        <ul class="nav navbar-nav">
+                            <li role="presentation" class="active"><a href="accueil.html"><span class="glyphicon glyphicon-home" style="color:#BBB;"></span>  Home</a></li>
+                            <li role="presentation"><a href="cv.html"><span class="glyphicon glyphicon-user" style="color:#BBB;"></span>  CV</a></li>
+                            <li role="presentation"><a href="ressources.html"><span class="glyphicon glyphicon-file" style="color:#BBB;"></span>  Ressources</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            
+            <div class="row">
+                <div id="text">
+                    <p>
+                    Bonjour, je m'appelle Timoté Malherbe et j'ai réalisé ce site web.
+                    Je suis actuellement en deuxième année d'école d'ingénieurs à Télécom Saint-Etienne.
+                    Si vous voulez me contacter pour quoique ce soit, remplissez le formulaire ci-desous.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <form class="col-lg-5">
+                    <H2><span class="label label-primary"><span class="glyphicon glyphicon-envelope" style="color:#FFF;"></span> Contact :</span></H2>
+                    <legend>Gender : </legend>
+                    <div class="radio">
+                        <label for="male" class="radio">
+                            <input type="radio" name="gender" value="male" id="male">
+                                Male
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label for="female" class="radio">
+                            <input type="radio" name="gender" value="female" id="female">
+                                Female
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label for="other" class="radio">
+                            <input type="radio" name="gender" value="other" id="other">
+                                Other
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="texte">Prénom : </label>
+                        <input type="text" class="form-control" required name="prenom" placeholder="François"/>
+                        <label for="texte">Nom : </label>
+                        <input type="text" class="form-control" required name="nom" placeholder="Dupond"/>
+                        <label for="texte">Email : </label>
+                        <input type="text" class="form-control" required name="email" placeholder="francoisdupond@email.com"/>
+                        <label for="texte">Adresse : </label>
+                        <input type="text" class="form-control" required name="adresse" placeholder="3 rue Victor Hugo"/>
+                        <label for="texte">Téléphone : </label>
+                        <input type="text" class="form-control" required name="telephone" placeholder="06 38 40 50 29"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="textarea">Textarea : </label>
+                        <textarea id="textarea" rows="8" type="textarea" class="form-control" placeholder=""></textarea>
+                    </div>
+                    <button class="btn btn-info" type="submit"><span class="glyphicon glyphicon-send"></span>  Submit</button>
+                </form>
+            </div>
+            
+            <div class="clear" style="clear:both">
+            </div>
+            
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <span class="text-muted">Copyright Timoté Malherbe 2017</span>
+            </div>
+        </footer>
+    </body>
+    
+</html>
