@@ -19,7 +19,7 @@
                     <div class="container-fluid">
                         <ul class="nav navbar-nav">
                             <li role="presentation" class="inactive"><a href="accueil.html"><span class="glyphicon glyphicon-home" style="color:#BBB;"></span>  Accueil</a></li>
-                            <li role="presentation" class="active"><a href="accueil.html"><span class="glyphicon glyphicon-phone" style="color:#BBB;"></span>  Contact</a></li>
+                            <li role="presentation" class="active"><a href="contact.php"><span class="glyphicon glyphicon-phone" style="color:#BBB;"></span>  Contact</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -74,10 +74,33 @@
                         </div>
                         <div class="form-group">
                             <label for="textarea">Message : </label>
-                            <textarea id="textarea" rows="8" type="textarea" class="form-control" placeholder=""></textarea>
+                            <textarea id="textarea" name="message" rows="8" type="textarea" class="form-control" placeholder=""></textarea>
                         </div>
                         <button class="btn btn-info" type="submit"><span class="glyphicon glyphicon-send"></span>  Soumettre</button>
                 </form>
+                <?php
+                if(isset($_POST['message'])){
+                     $entete  = 'MIME-Version: 1.0' . "\r\n";
+                     $entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+                     $entete .= 'From: ' . $_POST['email'] . "\r\n";
+
+                     $message = '<h1>Message envoyé depuis la page Contact de menuiserie-lebon.fr</h1>
+                     <p><b>Nom : </b>' . $_POST['nom'] . '<br>
+                     <b>Prénom : </b>' . $_POST['prenom'] . '<br>
+                     <b>Adresse : </b>' . $_POST['adresse'] . '<br>
+                     <b>Code postal : </b>' . $_POST['code_postal'] . '<br>
+                     <b>Ville : </b>' . $_POST['ville'] . '<br>
+                     <b>Email : </b>' . $_POST['email'] . '<br>
+                     <b>Téléphone : </b>' . $_POST['telephone'] . '<br>
+                     <b>Message : </b>' . $_POST['message'] . '</p>';
+
+                     $retour = mail('benoit.jausseran@gmail.com', 'Envoi depuis page Contact', $message, $entete);
+                     if($retour) {
+                         echo '<p>Votre message a bien été envoyé.</p>';
+                     }
+                 }
+                 error_reporting(E_ALL);
+                 ?>
             </div>
 
 
