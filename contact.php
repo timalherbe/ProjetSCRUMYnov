@@ -1,5 +1,4 @@
-<!DOCTYPE HTML>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="style7.css">
@@ -96,7 +95,10 @@
 
                      $retour = mail('benoit.jausseran@gmail.com', 'Envoi depuis page Contact', $message, $entete);
                      if($retour) {
-                         echo '<p>Votre message a bien été envoyé.</p>';
+                        ?>
+
+                        <p>Votre message a bien été envoyé.</p>'
+                        <?php
                      }
                  }
                  error_reporting(E_ALL);
