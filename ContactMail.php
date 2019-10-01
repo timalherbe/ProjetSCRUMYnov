@@ -14,7 +14,6 @@ if (isset($_POST)) {
     $mail->SMTPAuth = true;
     $mail->Username = "netpune.world@gmail.com";
     $mail->Password = "L/123456789";
-    $mail->Password = "L/123456789";
     try {
 //Set who the message is to be sent from
         $mail->setFrom($_POST['mail'], $_POST['fullname']);
@@ -39,6 +38,6 @@ if (isset($_POST)) {
 
 
     }
-    header("Location: index.php?req=".$nbInsert);
 }
 ?>
+
