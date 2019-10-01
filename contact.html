@@ -34,84 +34,49 @@
                     </p>
                 </div>
             </div>
-            <div class="site-section site-section-sm" id="contact">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-md-12 col-lg-8 mb-5">
-
-
-
-                            <form action="contactmail.php" class="p-5 bg-white" method="POST">
-
-                                <div class="row form-group">
-                                    <div class="col-md-12 mb-3 mb-md-0">
-                                        <label class="font-weight-bold" for="fullname">Identité</label>
-                                        <input type="text" name="fullname" class="form-control" placeholder="Nom - prénom">
-                                    </div>
-                                </div>
-                                <div class="row form-group">
-                                    <div class="col-md-12">
-                                        <label class="font-weight-bold" for="email">Email</label>
-                                        <input type="email" name="mail" class="form-control" placeholder="Addresse Email">
-                                    </div>
-                                </div>
-
-                                <div class="row form-group">
-                                    <div class="col-md-12 mb-3 mb-md-0">
-                                        <label class="font-weight-bold" for="phone">Téléphone</label>
-                                        <input type="text" name="phone" class="form-control" placeholder="+33" maxlength="10">
-                                    </div>
-                                </div>
-
-                                <div class="row form-group">
-                                    <div class="col-md-12">
-                                        <label class="font-weight-bold" for="message">Message</label>
-                                        <textarea name="message" cols="30" rows="5" class="form-control" placeholder=""></textarea>
-                                    </div>
-                                </div>
-
-                                <div class="row form-group">
-                                    <div class="col-md-12">
-                                        <input type="submit" value="Send Message" class="btn btn-primary pill px-4 py-2">
-                                    </div>
-                                </div>
-                            </form>
+            <div class="row">
+                <form class="col-lg-5">
+                    <H2><span class="label label-primary"><span class="glyphicon glyphicon-envelope" style="color:#FFF;"></span> Contact :</span></H2>
+                    <legend>Genre : </legend>
+                      <div class="radio">
+                          <label for="male" class="radio">
+                              <input type="radio" name="gender" value="male" id="male">
+                                  Homme
+                          </label>
+                      </div>
+                        <div class="radio">
+                            <label for="female" class="radio">
+                                <input type="radio" name="gender" value="female" id="female">
+                                    Femme
+                            </label>
                         </div>
-                    </div>
-                    <div class="radio">
-                        <label for="female" class="radio">
-                            <input type="radio" name="gender" value="female" id="female">
-                                Femme
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <label for="other" class="radio">
-                            <input type="radio" name="gender" value="other" id="other">
-                                Autre
-                        </label>
-                    </div>
-                    <div class="form-group">
-                        <label for="texte">Prénom : </label>
-                        <input type="text" class="form-control" required name="prenom" placeholder="François"/>
-                        <label for="texte">Nom : </label>
-                        <input type="text" class="form-control" required name="nom" placeholder="Dupond"/>
-                        <label for="texte">Email : </label>
-                        <input type="text" class="form-control" required name="email" placeholder="francoisdupond@email.com"/>
-                        <label for="texte">Adresse : </label>
-                        <input type="text" class="form-control" required name="adresse" placeholder="3 rue Victor Hugo"/>
-                        <label for="texte">Code postal : </label>
-                        <input type="text" class="form-control" required name="code_postal" placeholder="31000"/>
-                        <label for="texte">Ville : </label>
-                        <input type="text" class="form-control" required name="ville" placeholder="Toulouse"/>
-                        <label for="texte">Téléphone : </label>
-                        <input type="text" class="form-control" required name="telephone" placeholder="06 38 40 50 29"/>
-                    </div>
-                    <div class="form-group">
-                        <label for="textarea">Message : </label>
-                        <textarea id="textarea" rows="8" type="textarea" class="form-control" placeholder=""></textarea>
-                    </div>
-                    <button class="btn btn-info" type="submit"><span class="glyphicon glyphicon-send"></span>  Soumettre</button>
+                        <div class="radio">
+                            <label for="other" class="radio">
+                                <input type="radio" name="gender" value="other" id="other">
+                                    Autre
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="texte">Prénom : </label>
+                            <input type="text" class="form-control" required name="prenom" placeholder="François"/>
+                            <label for="texte">Nom : </label>
+                            <input type="text" class="form-control" required name="nom" placeholder="Dupond"/>
+                            <label for="texte">Email : </label>
+                            <input type="text" class="form-control" required name="email" placeholder="francoisdupond@email.com"/>
+                            <label for="texte">Adresse : </label>
+                            <input type="text" class="form-control" required name="adresse" placeholder="3 rue Victor Hugo"/>
+                            <label for="texte">Code postal : </label>
+                            <input type="text" class="form-control" required name="code_postal" placeholder="31000"/>
+                            <label for="texte">Ville : </label>
+                            <input type="text" class="form-control" required name="ville" placeholder="Toulouse"/>
+                            <label for="texte">Téléphone : </label>
+                            <input type="text" class="form-control" required name="telephone" placeholder="06 38 40 50 29"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="textarea">Message : </label>
+                            <textarea id="textarea" rows="8" type="textarea" class="form-control" placeholder=""></textarea>
+                        </div>
+                        <button class="btn btn-info" type="submit"><span class="glyphicon glyphicon-send"></span>  Soumettre</button>
                 </form>
             </div>
 
