@@ -1,4 +1,6 @@
+<!DOCTYPE html>
 <html lang="fr">
+
     <head>
         <meta charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="style7.css">
@@ -34,7 +36,7 @@
                 </div>
             </div>
             <div class="row">
-                <form class="col-lg-5">
+                <form class="col-lg-5" method="post">
                     <H2><span class="label label-primary"><span class="glyphicon glyphicon-envelope" style="color:#FFF;"></span> Contact :</span></H2>
                     <legend>Genre : </legend>
                       <div class="radio">
